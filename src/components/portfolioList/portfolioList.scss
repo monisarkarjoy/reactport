@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+li{
+    font-size: 14px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+
+    @include mobile{
+        margin-right: 10px;
+    }
+
+    &.active{
+        background-color: $mainColor;
+        color: white;
+    }
+}
